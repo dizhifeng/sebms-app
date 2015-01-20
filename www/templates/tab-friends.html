@@ -1,0 +1,14 @@
+<ion-view view-title="Friends">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-avatar" ng-repeat="friend in friends" type="item-text-wrap" href="#/tab/friend/{{friend.id}}">
+        <img ng-src="{{photoCtx+'photo/zkz/'+friend.student.photourl}}">
+        <h2>{{friend.zkz}}</h2>
+      </ion-item>
+    </ion-list>
+	  <ion-infinite-scroll
+    on-infinite="loadMore()"
+    distance="1%">
+  </ion-infinite-scroll>
+  </ion-content>
+</ion-view>

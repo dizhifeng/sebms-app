@@ -1,0 +1,29 @@
+<ion-view view-title="个人信息">
+  <ion-content>
+	   <div class="bg-dark text-center padder-v">
+	  	<div class="inline">
+                <a href="" class="thumb-md avatar b-3x block-center">
+                  <img src="http://219.140.60.48:8096/photo/zkz/2015-01-07/152327199510243523.jpg" alt="" />
+                </a>
+                <div class="">
+                  <div class="h3 m-t-md m-b-xs font-bold font-SimHei text-white">
+                    {{reg.student.name}}
+                    <i class="fa fa-circle text-success pull-right text-xs m-t-sm"></i>
+                  </div>
+                  <small class="text-thin">{{reg.specialty.name}}</small>
+                </div>
+              </div>
+	  </div>
+    <ion-list>
+      <ion-item class="item-toggle">
+        Enable Friends
+        <label class="toggle">
+          <input type="checkbox" ng-model="settings.enableFriends">
+          <div class="track">
+            <div class="handle"></div>
+          </div>
+        </label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,42 @@
+
+<ion-content>
+    <div class="bg-dark text-center padder-v">
+	  	<div class="block-center inline">
+                <a href="" class="thumb-md avatar b-3x">
+                  <img src="http://219.140.60.48:8096/photo/zkz/2015-01-07/152327199510243523.jpg" alt="" />
+                </a>
+                <div class="text-center">
+                  <div class="h3 text-white">
+                    用户登录
+                  </div>
+                  <small class="text-thin">你们好</small>
+                </div>
+              </div>
+	  </div>
+	<form ng-submit="doLogin()" name="form">
+		<div class="list">
+			<label class="item item-input">
+				<span class="input-label">准考证</span>
+				<input type="text" placeholder="输入准考证" required ng-model="loginData.zkz">
+			</label>
+			<label class="item item-input">
+				<span class="input-label">身份证</span>
+				<input type="text" placeholder="输入身份证" required ng-model="loginData.sfz">
+			</label>
+			<label class="item">
+				<button ng-disabled="form.$invalid" class="button button-block button-positive" type="submit">登录</button>
+
+			</label>
+		</div>
+	</form>
+    <ion-list>
+      <ion-item class="item-avatar" type="item-text-wrap" >
+        <img src="http://219.140.60.48:8096/photo/zkz/2015-01-07/152327199510243523.jpg" alt="" />
+        <h2>
+			<a class="button" href="tel:13871049172">13871049172</a>
+		</h2>
+      </ion-item>
+    </ion-list>
+    
+	<button ui-sref="signup"  class="button button-clear button-positive">注册</button>
+</ion-content>
